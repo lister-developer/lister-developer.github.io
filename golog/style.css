@@ -7,6 +7,24 @@
   --border: #d2d2d7;
 }
 
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --section-bg: #1d1d1f;
+    --text: #f5f5f7;
+    --muted: #86868b;
+    --accent: #0a84ff;
+    --border: #424245;
+  }
+
+  /* 深色模式下调整图片阴影 */
+  .screenshots img,
+  .feature-image img {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,6 +44,7 @@ header {
 
 nav {
   display: flex;
+  align-items: center;
   gap: 24px;
   font-size: 14px;
 }
@@ -33,10 +52,17 @@ nav {
 nav a {
   text-decoration: none;
   color: var(--muted);
+  display: flex;
+  align-items: center;
 }
 
 nav a:hover {
   color: var(--accent);
+}
+
+nav picture,
+nav img {
+  display: block;
 }
 
 .container {
