@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 h2 {
-  font-size: 36px;
+  /* font-size: 36px; */
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
@@ -113,6 +113,80 @@ p {
   font-size: 16px;
 }
 
+/* ---------- Detailed Features ---------- */
+
+.features-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.feature-detailed {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.feature-detailed.feature-left {
+  flex-direction: row;
+}
+
+.feature-detailed.feature-right {
+  flex-direction: row-reverse;
+}
+
+.feature-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.feature-detailed h2 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.feature-detailed p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.feature-image {
+  flex: 0 0 400px;
+  max-width: 100%;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .feature-detailed {
+    flex-direction: column !important;
+    gap: 32px;
+  }
+  
+  .feature-image {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+  
+  .feature-detailed h2 {
+    font-size: 28px;
+  }
+  
+  .feature-detailed p {
+    font-size: 16px;
+  }
+}
+
 /* ---------- Footer ---------- */
 
 footer {
@@ -121,4 +195,20 @@ footer {
   color: var(--muted);
   padding: 40px 24px;
   text-align: center;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+
+  /* 背景图 */
+  background-image: url("assets/banner1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Apple 风格：干净、克制 */
+  color: #fff;
+  position: relative;
 }
