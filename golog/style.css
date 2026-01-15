@@ -36,6 +36,7 @@
 
 body {
   margin: 0;
+  padding-top: 118px;
   font-family: -apple-system, BlinkMacSystemFont,
     "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   background: var(--bg);
@@ -44,7 +45,14 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
+  z-index: 1000;
 }
 
 nav {
@@ -197,10 +205,53 @@ p {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
+/* ---------- FAQ ---------- */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--section-bg);
+  padding: 20px 22px;
+}
+
+.faq-item h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.faq-answer {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.faq-answer p {
+  margin: 10px 0;
+}
+
+.faq-answer ul {
+  margin: 10px 0 10px 18px;
+  padding: 0;
+}
+
+.faq-answer li {
+  margin: 6px 0;
+}
+
 /* ---------- 响应式设计 ---------- */
 
 @media (max-width: 768px) {
   /* 容器和间距 */
+  body {
+    padding-top: 100px;
+  }
+
   .container {
     padding: 40px 20px;
   }
@@ -237,6 +288,15 @@ p {
 
   p {
     font-size: 16px;
+  }
+
+  /* FAQ */
+  .faq-item {
+    padding: 18px 18px;
+  }
+
+  .faq-item h2 {
+    font-size: 18px;
   }
 
   /* Hero 标题 */
@@ -341,6 +401,10 @@ p {
 
 @media (max-width: 480px) {
   /* 更小的移动设备 */
+  body {
+    padding-top: 90px;
+  }
+
   .container {
     padding: 32px 16px;
   }
