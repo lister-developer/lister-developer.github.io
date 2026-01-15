@@ -305,6 +305,19 @@ p {
     line-height: 1.5 !important;
     max-width: 100% !important;
   }
+
+  /* 联系页面 */
+  .contact-info {
+    gap: 24px;
+  }
+
+  .contact-item {
+    padding: 20px;
+  }
+
+  .contact-item h2 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -353,6 +366,38 @@ p {
   .section p[style*="font-size: 24px"] {
     font-size: 18px !important;
   }
+
+  /* 联系页面 */
+  .contact-item h2 {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Footer ---------- */
+
+/* ---------- Contact Page ---------- */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.contact-item {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--section-bg);
+}
+
+.contact-item h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
 }
 
 /* ---------- Footer ---------- */
