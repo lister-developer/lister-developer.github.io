@@ -23,6 +23,11 @@
   .feature-image img {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
+
+  /* 深色模式下二维码阴影 */
+  .qr-code img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
 }
 
 * {
@@ -318,6 +323,20 @@ p {
   .contact-item h2 {
     font-size: 20px;
   }
+
+  /* 移动端：带二维码的联系项垂直排列 */
+  .contact-item-with-qr {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .qr-code {
+    text-align: center;
+  }
+
+  .qr-code img {
+    max-width: 180px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -371,6 +390,10 @@ p {
   .contact-item h2 {
     font-size: 18px;
   }
+
+  .qr-code img {
+    max-width: 160px;
+  }
 }
 
 /* ---------- Footer ---------- */
@@ -398,6 +421,33 @@ p {
 
 .contact-item a:hover {
   text-decoration: underline;
+}
+
+/* 带二维码的联系项布局 */
+.contact-item-with-qr {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.contact-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.qr-code {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.qr-code picture,
+.qr-code img {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ---------- Footer ---------- */
