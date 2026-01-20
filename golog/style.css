@@ -58,6 +58,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 24px;
   font-size: 14px;
 }
@@ -76,6 +77,41 @@ nav a:hover {
 nav picture,
 nav img {
   display: block;
+}
+
+/* Header layout groups */
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-right {
+  gap: 12px;
+}
+
+.lang-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.lang-switch a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--section-bg);
+  line-height: 1.2;
+}
+
+.lang-switch a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .container {
@@ -514,27 +550,7 @@ p {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.lang-switch {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 12px 0 24px;
-  font-size: 14px;
-}
-
-.lang-switch a {
-  color: var(--muted);
-  text-decoration: none;
-  padding: 6px 10px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--section-bg);
-}
-
-.lang-switch a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
+/* legacy: older in-page language switch removed in favor of header switch */
 
 /* ---------- Footer ---------- */
 

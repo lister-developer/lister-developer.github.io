@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoLog · 记录你走过的世界</title>
+  <title>GoLog · あなたの足跡を記録する</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,15 +12,15 @@
   <div class="container" style="padding: 24px;">
     <nav>
       <div class="nav-left">
-        <a href="index.html">
+        <a href="index-ja.html">
           <picture>
             <source srcset="assets/small-logo-white.png" media="(prefers-color-scheme: dark)" />
             <img src="assets/small-logo-black.png" width="70" alt="GoLog" />
           </picture>
         </a>
-        <a href="privacy.html">隐私</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">联系我们</a>
+        <a href="privacy-ja.html">プライバシー</a>
+        <a href="faq-ja.html">FAQ</a>
+        <a href="contact-ja.html">お問い合わせ</a>
       </div>
       <div class="nav-right">
         <div class="lang-switch" aria-label="Language switch">
@@ -35,21 +35,19 @@
   </div>
 </header>
 
-<!-- Introduction -->
 <section class="section">
   <div class="container">
     <p style="font-size: 21px; line-height: 1.6; max-width: 800px; margin: 0;">
-      GoLog 是一个记录出行轨迹的应用。<br />
-      不打卡，不社交，就是单纯记录你去过的地方。
+      GoLog は移動の軌跡を記録するアプリです。<br />
+      チェックインもSNSもなし。行った場所をそのまま残します。
     </p>
     <p style="font-size: 17px; line-height: 1.6; max-width: 800px; margin: 24px 0 0; color: var(--muted);">
-      位置不只是坐标，轨迹也不只是线条。<br />
-      在 GoLog 里，你的每一次移动都会被记录下来。
+      位置情報はただの座標ではなく、軌跡もただの線ではありません。<br />
+      GoLog では、あなたの移動をきちんと記録します。
     </p>
   </div>
 </section>
 
-<!-- Screenshots -->
 <section class="section alt">
   <div class="container">
     <div class="screenshots">
@@ -66,102 +64,100 @@
   </div>
 </section>
 
-<!-- Features -->
 <section class="section">
   <div class="container">
     <div class="features-detailed">
       <div class="feature-detailed feature-left">
         <div class="feature-content">
-          <h2>足迹地图</h2>
+          <h2>足跡マップ</h2>
           <p>
-            根据你的定位数据，在地图上显示你去过的地方和走过的路线。<br />
+            位置情報をもとに、行った場所と通ったルートを地図に表示します。<br />
+            拡大で詳細、縮小で行動範囲が見えます。
           </p>
         </div>
         <div class="feature-image">
-          <img src="assets/dark_cn1.png" alt="足迹地图" />
+          <img src="assets/dark_cn1.png" alt="足跡マップ" />
         </div>
       </div>
-      
+
       <div class="feature-detailed feature-right">
         <div class="feature-content">
-          <h2>出行记录</h2>
+          <h2>移動の記録</h2>
           <p>
-            不只是看去了哪里，还能看你的出行频率。<br />
-            按天、按月统计，看看自己什么时候出门多，什么时候宅在家。
+            行き先だけでなく、移動の頻度も振り返れます。<br />
+            日／月単位で、生活のリズムを確認できます。
           </p>
         </div>
         <div class="feature-image">
-          <img src="assets/dark_cn2.png" alt="出行记录" />
-        </div>
-      </div>
-      
-      <div class="feature-detailed feature-left">
-        <div class="feature-content">
-          <h2>轨迹回放</h2>
-          <p>
-            可以回放任意时间段的轨迹，重新看一遍你去过的地方。<br />
-          </p>
-        </div>
-        <div class="feature-image">
-          <img src="assets/play.png" alt="轨迹回放" />
-        </div>
-      </div>
-      
-      <div class="feature-detailed feature-right">
-        <div class="feature-content">
-          <h2>数据整理</h2>
-          <p>
-            可以按日期查看、补全、归档或隐藏足迹。<br />
-            想在地图上显示什么，你自己决定。
-          </p>
-        </div>
-        <div class="feature-image">
-          <img src="assets/dark_cn8.png" alt="数据整理" />
+          <img src="assets/dark_cn2.png" alt="移動の記録" />
         </div>
       </div>
 
       <div class="feature-detailed feature-left">
         <div class="feature-content">
-          <h2>城市停留</h2>
+          <h2>ルート再生</h2>
           <p>
-            可以看你在哪些城市停留过，停留了多久，在哪些地方待过。
+            任意の期間の軌跡を再生して、旅を見返せます。<br />
+            ルートや速度は実データに基づいて表示されます。
           </p>
         </div>
         <div class="feature-image">
-          <img src="assets/dark_cn5.png" alt="数据存储" />
+          <img src="assets/play.png" alt="ルート再生" />
         </div>
       </div>
-      
+
       <div class="feature-detailed feature-right">
         <div class="feature-content">
-          <h2>数据存储</h2>
+          <h2>データ整理</h2>
           <p>
-            GoLog 没有服务器，不会收集你的数据。<br />
-            所有足迹数据只存在你的手机里。<br /><br />
-            如果开了 iCloud，数据会通过 Apple 的 iCloud 同步，只存在应用自己的文件夹里。<br />
-            GoLog 只能访问这个文件夹，不会碰你 iCloud 里的其他东西。<br />
-            你的数据，你自己控制。
+            日付ごとに表示、補完、アーカイブ、非表示ができます。<br />
+            地図に残す内容は自分で選べます。
           </p>
         </div>
         <div class="feature-image">
-          <img src="assets/datamanage.png" alt="数据存储" />
+          <img src="assets/dark_cn8.png" alt="データ整理" />
+        </div>
+      </div>
+
+      <div class="feature-detailed feature-left">
+        <div class="feature-content">
+          <h2>都市の滞在</h2>
+          <p>
+            どの都市にどれくらい滞在したか、大まかな滞在場所も確認できます。
+          </p>
+        </div>
+        <div class="feature-image">
+          <img src="assets/dark_cn5.png" alt="都市の滞在" />
+        </div>
+      </div>
+
+      <div class="feature-detailed feature-right">
+        <div class="feature-content">
+          <h2>データ保存</h2>
+          <p>
+            GoLog はサーバーを持たず、データを収集しません。<br />
+            足跡は端末内に保存されます。<br /><br />
+            iCloud を有効にした場合、データはアプリ専用フォルダに保存され iCloud が同期します。<br />
+            データはあなたが管理できます。
+          </p>
+        </div>
+        <div class="feature-image">
+          <img src="assets/datamanage.png" alt="データ保存" />
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Philosophy -->
 <section class="section alt">
   <div class="container">
     <p style="font-size: 24px; line-height: 1.6; text-align: center; max-width: 700px; margin: 0 auto; font-weight: 500;">
       GoLog<br />
-      不是为了记录世界有多大，<br />
-      而是记录你确实走过这里。
+      世界の広さを記録するためではなく、<br />
+      「ここを歩いた」ことを残すために。
     </p>
   </div>
 </section>
-
 
 <footer class="container">
   © 2026 GoLog
