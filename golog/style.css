@@ -514,6 +514,28 @@ p {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.lang-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 24px;
+  font-size: 14px;
+}
+
+.lang-switch a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--section-bg);
+}
+
+.lang-switch a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 /* ---------- Footer ---------- */
 
 footer {
