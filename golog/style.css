@@ -25,7 +25,8 @@
   }
 
   /* 深色模式下二维码阴影 */
-  .qr-code img {
+  .qr-code img,
+  .tip-codes .tip-code-item img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 }
@@ -433,6 +434,15 @@ p {
   .qr-code img {
     max-width: 180px;
   }
+
+  .tip-codes {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .tip-codes .tip-code-item img {
+    max-width: 180px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -494,6 +504,10 @@ p {
   .qr-code img {
     max-width: 160px;
   }
+
+  .tip-codes .tip-code-item img {
+    max-width: min(160px, 42vw);
+  }
 }
 
 /* ---------- Footer ---------- */
@@ -542,6 +556,31 @@ p {
 
 .qr-code picture,
 .qr-code img {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 联系页：微信赞赏 + 支付宝，高度可能不一致，顶对齐 */
+.tip-codes {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 20px 24px;
+  max-width: min(100%, 520px);
+}
+
+.tip-codes .tip-code-item {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.tip-codes .tip-code-item img {
   display: block;
   max-width: 200px;
   width: 100%;
